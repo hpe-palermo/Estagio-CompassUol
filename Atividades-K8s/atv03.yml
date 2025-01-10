@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  APP_ENV: "production"
+  APP_SECRET_KEY: "mysecretkey123"
+  MESSAGE: "ConfigMap montado com sucesso"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+spec:
+  containers:
+    - name: app-container
+      image: nginx
+      envFrom:
+        - configMapRef:
+            name: app-config
