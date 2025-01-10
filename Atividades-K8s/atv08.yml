@@ -1,3 +1,4 @@
+# Crie um Horizontal Pod Autoscaler para um Deployment chamado "hpa-deployment" e configure-o para escalar com base no uso de CPU. Aumente a carga e observe o escalonamento.
 
 apiVersion: apps/v1
 kind: Deployment

@@ -1,3 +1,4 @@
+# Crie um serviço do tipo NodePort para expor externamente um Deployment chamado "webapp". Acesse o serviço usando o endereço IP do Minikube e a porta atribuída.
 
 apiVersion: apps/v1
 kind: Deployment

@@ -1,4 +1,6 @@
+# Crie um serviço do tipo ClusterIP para um Deployment chamado "backend" e teste a conectividade interna entre pods usando o nome do serviço.
 
+# testar a conectividade: kubectl exec -it backend-5974db8965-5j2wg -- curl backend-service
 apiVersion: apps/v1
 kind: Deployment
 metadata:

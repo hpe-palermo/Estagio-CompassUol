@@ -1,3 +1,11 @@
+# Implante um Deployment chamado "my-deployment" com três réplicas de uma aplicação baseada na imagem "httpd". Atualize a imagem do Deployment para uma versão mais recente.
+
+# por comando
+# criar o deployment
+# kubectl create deployment my-deployment --image=httpd --replicas=1
+
+# atualizar a imagem
+# kubectl set image deployment/my-deployment httpd=httpd:latest
 apiVersion: apps/v1
 kind: Deployment
 metadata:

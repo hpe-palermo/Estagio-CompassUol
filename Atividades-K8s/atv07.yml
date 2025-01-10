@@ -1,4 +1,7 @@
+# Implante um Job chamado "batch-job" que execute um comando simples e termine. Verifique os logs do Job para confirmar sua execução.
 
+# verififcar os logs: kubectl logs batch-job-2zvm
+# deve retornar: Hello, Kubernetes!
 apiVersion: batch/v1
 kind: Job
 metadata:

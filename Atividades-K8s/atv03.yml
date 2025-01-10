@@ -1,3 +1,5 @@
+# Crie um ConfigMap chamado "app-config" com uma variável de configuração personalizada. Monte o ConfigMap em um pod e verifique se o valor foi aplicado corretamente.
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

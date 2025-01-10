@@ -1,3 +1,4 @@
+# Crie um Secret chamado "app-secret" contendo informações sensíveis. Injete o Secret como uma variável de ambiente em um pod e teste se está acessível.
 
 apiVersion: v1
 kind: Secret

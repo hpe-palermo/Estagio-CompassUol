@@ -1,3 +1,4 @@
+# Configure um PersistentVolume de 1Gi de armazenamento local e vincule-o a um PersistentVolumeClaim. Monte o volume em um pod e salve arquivos para verificar a persistência.
 
 apiVersion: v1
 kind: PersistentVolume

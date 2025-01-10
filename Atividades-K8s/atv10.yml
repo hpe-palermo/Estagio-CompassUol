@@ -1,4 +1,7 @@
+# Crie um pod chamado "restart-pod" com a política de reinício configurada como "OnFailure". Provoque uma falha no pod e observe seu comportamento.
 
+# verificar a falha: kubectl get po restart-pod
+# deve informar que está falhando!
 apiVersion: v1
 kind: Pod
 metadata:
@@ -9,5 +12,3 @@ spec:
     image: busybox
     command: ["sh", "-c", "exit 1"]
   restartPolicy: OnFailure
-
-docker run -d --name my-container busybox sh -c "i=1; while true; do echo \"Hello \$i\"; i=\$((i+1)); sleep 1; done"
